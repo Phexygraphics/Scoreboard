@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score card</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="home">
+            <h1>Home</h1>
+            <h2 id="home">0</h2>
+            <div class="points">
+                <p id="homeone" onclick="increaseOne()">+1</p>
+                <p id="hometwo" onclick="increaseTwo()">+2</p>
+                <p id="homethree" onclick="increaseThree()">+3</p>
+            </div>
+        </div>
+        <div class="away">
+            <h1>Away</h1>
+            <h2 id="away">0</h2>
+            <div class="points">
+                <p id="awayone" onclick="awayIncreaseOne()">+1</p>
+                <p id="awaytwo" onclick="awayIncreaseTwo()">+2</p>
+                <p id="awaythree" onclick="awayIncreaseThree()">+3</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let homeIncrease = document.getElementById('home')
+        let homeIncreaseTwo = document.getElementById('home')
+        let homeIncreaseThree = document.getElementById('home')
+        let awayIncrease = document.getElementById('away')
+        let awayIncreasebyTwo = document.getElementById('away')
+        let awayIncreasebyThree = document.getElementById('away')
+    </script>
+</body>
+</html>
